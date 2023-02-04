@@ -8,7 +8,7 @@ export interface Row {
 
 
 export class DataManipulator {
-  static generateRow(serverResponds: ServerRespond[]) {
+  static generateRow(serverResponds: ServerRespond[]): Row[] {
     return serverResponds.map((el: any) => {
       return {
         stock: el.stock,
